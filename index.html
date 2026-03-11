@@ -1,0 +1,438 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ragistration form</h1>
+    <style>.box{
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+    <div class="box">
+    <form action="submit">
+        <label>username</label><br>
+        <input type="text" placeholder="enter your name"><br>
+
+        <label>password</label><br>
+        <input type="text" placeholder="enter your pass only in text"><br><br>
+        <button>submit</button>
+    </form>
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Landing Page</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header{
+            background-color: #1e293b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar{
+            background-color: #334155;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero{
+            background-color: #e2e8f0;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h1{
+            margin-bottom: 10px;
+        }
+
+        .hero p{
+            font-size: 18px;
+            color: #333;
+        }
+
+        .hero button{
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+
+        .about{
+            padding: 40px;
+            background-color: white;
+        }
+
+        .about h2{
+            text-align: center;
+        }
+
+        .about p{
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            color: #555;
+        }
+
+        .services{
+            background-color: #f1f5f9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .service-box{
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+
+        .contact{
+            padding: 40px;
+            background-color: white;
+            text-align: center;
+        }
+
+        input, textarea{
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .footer{
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Satyam Kumar</h1>
+        <p>Future Software Engineer | CSE-AI</p>
+    </div>
+
+    <div class="navbar">
+        <a href="https://leetcode.com/problems/add-two-numbers/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to My Landing Page</h1>
+        <p>I build simple, clean and  web-page </p>
+        <button>Get Started</button>
+    </div>
+
+ 
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech student in CSE-AI, learning web development and
+            improving my skills step by step.
+        </p>
+    </div>
+
+
+    <div class="services">
+        <h2>My Services</h2>
+
+        <div class="service-box">
+            <h3>Web Design</h3>
+            <p>Simple and responsive layouts</p>
+        </div>
+
+        <div class="service-box">
+            <h3>HTML & CSS</h3>
+            <p>Clean and structured code</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Learning Projects</h3>
+            <p>Beginner-friendly applications</p>
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <textarea rows="4" placeholder="Your Message"></textarea><br>
+            <button>Send Message</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Satyam Kumar | All Rights Reserved</p>
+    </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Kumar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #e5e7eb;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #020617;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 80px 8%;
+            background: #020617;
+        }
+
+        .about h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5f5;
+            font-size: 1.05rem;
+        }
+
+        /* SKILLS */
+        .skills {
+            padding: 80px 8%;
+        }
+
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #38bdf8;
+            font-size: 2.2rem;
+        }
+
+        .skill-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border: 1px solid #38bdf8;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #cbd5f5;
+            font-size: 0.95rem;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #020617;
+            color: #94a3b8;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Satyam.</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Satyam Kumar</span></h1>
+            <p>
+                A passionate Computer Science student (CSE-AI)  
+                building clean, scalable and modern web experiences.
+            </p>
+            <a href="#" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a B.Tech CSE-AI student who loves problem-solving, web development
+            and learning modern technologies. Currently focusing on DSA,
+            MERN stack and system fundamentals.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, Responsive Design</p>
+            </div>
+
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Node.js, Express, REST APIs</p>
+            </div>
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>C++, Java, Data Structures & Algorithms</p>
+            </div>
+
+            <div class="card">
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Satyam Kumar | Built with ❤️
+    </footer>
+
+</body>
+</html>

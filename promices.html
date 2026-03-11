@@ -1,0 +1,84 @@
+<!-- <!doctype html>
+<html>
+  <head>
+    <title>Promise Example</title>
+  </head>
+  <body>
+    <h2>Promise Demo</h2>
+    <button id="loadBtn">Load Data</button>
+    <p id="output"></p>
+
+    <script>
+    //   function fetchData() {
+    //     return new Promise(function (resolve, reject) {
+
+    //       setTimeout(function () {
+    //         let success = true;
+
+    //         if (success) {
+    //           resolve("Data loaded successfully");
+    //         } else {
+    //           reject("Something went wrong");
+    //         }
+    //       }, 2000);
+    //     });
+    //   }
+    function fetchData() {
+        return new Promise(function (resolve,reject){
+            setTimeout(function(){
+                let success=true;
+                if (success){
+                    resolve("DATA LOADED");
+                }
+                else{
+                    reject("something wrong");
+                }
+            },2000);
+        });
+    }
+
+      document.getElementById("loadBtn").addEventListener("click", function () {
+        document.getElementById("output").innerText = "Loading...";
+
+        fetchData()
+          .then(function (aa) {
+            //then runs this function when promise is resolved, with data being passed as argument which is result here
+            document.getElementById("output").innerText = aa;
+          })
+          .catch(function (error) {
+            document.getElementById("output").innerText = error;
+          });
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch api</title>
+</head>
+<body>
+    <button id="loadBtn">Load Users</button>
+</body>
+
+<script>
+    const btn = document.querySelector("#loadBtn")
+
+    btn.addEventListener("click", loadUsers)
+
+async function loadUsers(){
+
+    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+
+    const data = await response.json() //just pauses the execution of this function until response.json() is resolved and then it assigns the resolved value to data 
+    //internally using await is like writing response.json().then(function(data){ console.log(data) }) but with await we can write it in a more synchronous way which is easier to read and understand
+
+    console.log(data)
+
+}
+</script>
+  
+</html>
