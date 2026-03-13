@@ -84,17 +84,17 @@ let weatherRes = await fetch(weatherURL)
 let weatherData = await weatherRes.json()
 
 document.getElementById(tempId).innerHTML =
-"🌡 Temp : " + weatherData.current_weather.temperature + " °C"
+" Temp : " + weatherData.current_weather.temperature + " °C"
 
 document.getElementById(windId).innerHTML =
-"💨 Wind : " + weatherData.current_weather.windspeed + " km/h"
+" Wind : " + weatherData.current_weather.windspeed + " km/h"
 
 document.getElementById(timeId).innerHTML =
-"🕒 Time : " + weatherData.current_weather.time
+" Time : " + weatherData.current_weather.time
 
 }
 
-// AUTO LOAD
+
 loadWeather("siwan","temp-siwan","wind-siwan","time-siwan")
 loadWeather("maharajganj","temp-maha","wind-maha","time-maha")
 loadWeather("varanasi","temp-vara","wind-vara","time-vara")
